@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Работа с файлами</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header>
+    <h1>ГАЛЕРЕЯ ФОТО2</h1>
+  </header>
+
+<div class="images">
+
+  {% for img in images %}
+    <a href="image.php?photo={{ img }}">
+    <img src="./img/{{ img }}">
+    </a>
+  {% endfor %}
+
+</div>
+
+</body>
+</html>
